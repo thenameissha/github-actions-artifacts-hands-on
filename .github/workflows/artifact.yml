@@ -21,13 +21,13 @@ jobs:
   download :
     runs-on: ubuntu-latest
     steps:
-    - name: download text file from previous steps:
+    - name: download text file from previous steps
       uses: actions/upload-artifact@v4
       with:
         name: hello.txt
 	
-  	- name: display content
-  	  run : cat hello.txt
-	  
+    - name: display content
+      run : cat hello.txt
+  
 	  
 	
