@@ -22,9 +22,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: download text file from previous steps
-      uses: actions/upload-artifact@v4
+      uses: actions/download-artifact@v4
       with:
-        name: hello.txt
+        name: hello-artifact
 	
     - name: display content
       run : cat hello.txt
